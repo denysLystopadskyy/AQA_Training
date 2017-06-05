@@ -10,6 +10,7 @@ public class AuthTests extends BaseUITest {
 
     private static final String DEMOSTORE_URL = "https://demostore.x-cart.com/admin/admin.php";
 
+    // TODO: 6/5/2017 git test
     @Test
     public void UserShouldBeLoginToAdminWithSubmit() {
         new AdminPage(driver).get();
