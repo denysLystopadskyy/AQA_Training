@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Utils.LogUtils;
+
 /**
  * Created by denys.lystopadskyy on 5/30/2017.
  */
@@ -22,6 +24,7 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage openXCartSite() {
+        LogUtils.testStep("Login to site");
         driver.get("https://demostore.x-cart.com/admin/admin.php?target=login");
         return this;
     }

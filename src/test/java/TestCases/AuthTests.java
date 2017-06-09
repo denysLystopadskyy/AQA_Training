@@ -3,6 +3,7 @@ package TestCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Utils.LogUtils;
 import pages.AdminPage;
 import pages.LoginPage;
 
@@ -12,6 +13,7 @@ public class AuthTests extends BaseUITest {
 
     @Test
     public void UserShouldBeLoginToAdminWithSubmit() {
+        LogUtils.testStep("Login to Admin page");
         new AdminPage(driver).get();
     }
 
